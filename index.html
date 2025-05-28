@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamVibe India – Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Light/Dark Mode Toggle -->
+    <input type="checkbox" id="mode-toggle" hidden>
+    <label for="mode-toggle" class="mode-toggle-label" title="Toggle light/dark mode"></label>
+
+    <!-- Fixed Top Navigation Bar -->
+    <nav class="navbar">
+        <span><img width="53" src="assets/images/logo.svg" alt=""></span>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#trending">Trending Movies</a></li>
+            <li><a href="#shows">Popular Shows</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+        <div>
+            <button class="btn">English</button>
+            <button class="btn btn-red-sm">Sign In</button>
+        </div>
+    </nav>
+
+    <div class="main">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-flex">
+                <div class="hero-left">
+                    <h1>StreamVibe India</h1>
+                    <p>Enjoy big movies, hit series and more from ₹ 149.<br>Join today. Cancel anytime.</p>
+                    <a href="#trending" class="btn btn-red scroll-btn">See Trending Movies</a>
+                </div>
+                <div class="hero-right">
+                    <svg class="hero-svg bounce" width="120" height="120" viewBox="0 0 120 120">
+                        <circle cx="60" cy="60" r="50" fill="#e50914" />
+                        <text x="60" y="75" text-anchor="middle" fill="#fff" font-size="48">🎬</text>
+                    </svg>
+                </div>
+            </div>
+            <span>Ready to watch? Enter your email to create or restart your membership.</span>
+            <div class="hero-buttons">
+                <input type="text" placeholder="Email Address">
+                <button class="btn btn-red">Get Started &gt;</button>
+            </div>
+        </section>
+        <div class="separation"></div>
+    </div>
+
+    <!-- Trending Movies Section -->
+    <section id="trending" class="trending-section">
+        <h2>Trending Movies</h2>
+        <p>Catch the latest blockbusters everyone is talking about!</p>
+        <div class="movie-cards">
+            <div class="movie-card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg" alt="Inception">
+                <div class="movie-info">
+                    <h3>Inception</h3>
+                    <p>A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.</p>
+                </div>
+                <span class="duration">2h 28m</span>
+                <label class="watchlist-toggle">
+                    <input type="checkbox" hidden>
+                    <span class="toggle-icon">+</span>
+                    <span class="toggle-icon checked">✓</span>
+                </label>
+                <a href="https://www.imdb.com/title/tt1375666/" class="watch-now-btn" target="_blank">Watch Now</a>
+            </div>
+            <div class="movie-card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg" alt="The Dark Knight">
+                <div class="movie-info">
+                    <h3>The Dark Knight</h3>
+                    <p>When the menace known as the Joker emerges, Batman must accept one of the greatest psychological and physical tests of his ability.</p>
+                </div>
+                <span class="duration">2h 32m</span>
+                <label class="watchlist-toggle">
+                    <input type="checkbox" hidden>
+                    <span class="toggle-icon">+</span>
+                    <span class="toggle-icon checked">✓</span>
+                </label>
+                <a href="https://www.imdb.com/title/tt0468569/" class="watch-now-btn" target="_blank">Watch Now</a>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/I/81ExhpBEbHL._AC_SY679_.jpg" alt="Avengers: Endgame">
+                <div class="movie-info">
+                    <h3>Avengers: Endgame</h3>
+                    <p>After the devastating events of Infinity War, the Avengers assemble once more to reverse Thanos' actions and restore balance to the universe.</p>
+                </div>
+                <span class="duration">3h 1m</span>
+                <label class="watchlist-toggle">
+                    <input type="checkbox" hidden>
+                    <span class="toggle-icon">+</span>
+                    <span class="toggle-icon checked">✓</span>
+                </label>
+                <a href="https://www.imdb.com/title/tt4154796/" class="watch-now-btn" target="_blank">Watch Now</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="separation"></div>
+
+    <!-- Popular Shows Section -->
+    <section id="shows" class="shows-section">
+        <h2>Popular Shows</h2>
+        <p>Binge-worthy series you can't miss!</p>
+        <div class="show-cards">
+            <div class="show-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Breaking_Bad_logo.svg" alt="Breaking Bad">
+                <div class="show-info">
+                    <h3>Breaking Bad</h3>
+                    <span class="genre">Crime, Drama, Thriller</span>
+                    <span class="seasons">5 Seasons, 62 Episodes</span>
+                    <p>A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.</p>
+                    <label for="modal1" class="learn-more-btn">Learn More</label>
+                </div>
+                <input type="checkbox" id="modal1" class="modal-toggle" hidden>
+                <div class="modal">
+                    <div class="modal-content">
+                        <label for="modal1" class="close-modal">&times;</label>
+                        <h3>Breaking Bad</h3>
+                        <p>A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.</p>
+                        <a href="https://www.imdb.com/title/tt0903747/" class="watch-now-btn" target="_blank">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="show-card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/b/b1/Stranger_Things_season_1.jpg" alt="Stranger Things">
+                <div class="show-info">
+                    <h3>Stranger Things</h3>
+                    <span class="genre">Drama, Fantasy, Horror</span>
+                    <span class="seasons">4 Seasons, 34 Episodes</span>
+                    <p>When a young boy disappears, his friends, family, and a mysterious girl uncover a series of supernatural mysteries in their small town.</p>
+                    <label for="modal2" class="learn-more-btn">Learn More</label>
+                </div>
+                <input type="checkbox" id="modal2" class="modal-toggle" hidden>
+                <div class="modal">
+                    <div class="modal-content">
+                        <label for="modal2" class="close-modal">&times;</label>
+                        <h3>Stranger Things</h3>
+                        <p>When a young boy disappears, his friends, family, and a mysterious girl uncover a series of supernatural mysteries in their small town.</p>
+                        <a href="https://www.imdb.com/title/tt4574334/" class="watch-now-btn" target="_blank">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separation"></div>
+
+    <!-- User Reviews Section -->
+    <section id="reviews" class="reviews-section">
+        <div class="reviews-list">
+            <div class="review-card">
+                <img src="https://randomuser.me/api/portraits/women/79.jpg" alt="Priya Sharma">
+                <h4>Priya Sharma</h4>
+                <p>"Absolutely love the variety of movies and shows!"</p>
+            </div>
+            <div class="review-card">
+                <img src="https://randomuser.me/api/portraits/men/80.jpg" alt="Rahul Mehta">
+                <h4>Rahul Mehta</h4>
+                <p>"Great streaming quality and easy to use."</p>
+            </div>
+        </div>
+        <div class="review-form">
+            <h3>Submit Your Review</h3>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your Review" required></textarea>
+                <button type="submit" class="btn btn-red">Submit</button>
+            </form>
+        </div>
+    </section>
+    <div class="separation"></div>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faqbox">
+            <span>What is StreamVibe</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="faqbox">
+            <span>How much does StreamVibe cost?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="faqbox">
+            <span>What can I watch on StreamVibe?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+        <div class="faqbox">
+            <span>Where can I watch?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </div>
+    </section>
+    <div class="separation"></div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="faq" class="social-link">Facebook</a>
+            <a href="faq" class="social-link">Twitter</a>
+            <a href="faq" class="social-link">Instagram</a>
+        </div>
+        <div class="legal-links">
+            <a href="faq" target="_blank">Terms &amp; Conditions</a>
+            <a href="faq" target="_blank">Privacy Policy</a>
+        </div>
+        <button class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Back to Top</button>
+        <div class="questions">
+            Questions? Call 000-800-919-1694
+        </div>
+        <div class="footer">
+            <div class="footer-item"> 
+                <a href="faq">Investor Relations</a>
+                <a href="faq">Jobs</a>
+                <a href="faq">Ways to Watch</a>
+                <a href="faq">Terms of Use</a>
+            </div>
+            <div class="footer-item"> 
+                <a href="faq">Help Centre</a>
+                <a href="faq">Account</a>
+                <a href="faq">Speed Test</a>
+                <a href="faq">Legal Notices</a>
+            </div>
+            <div class="footer-item">
+                <a href="faq">Media Centre</a>
+                <a href="faq">Privacy</a>
+                <a href="faq">Cookie Preferences</a> 
+                <a href="faq">Corporate</a>
+            </div>
+            <div class="footer-item">
+                <a href="faq">Contact Us</a>
+                <a href="faq">Speed Test</a> 
+                <a href="faq">Legal Notices</a> 
+                <a href="faq">Only on StreamVibe</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
